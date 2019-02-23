@@ -1,10 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import itertools
-<<<<<<< HEAD
 import os
-=======
->>>>>>> 062e5cd4f730de347a4d835d56da1909b859c974
 
 
 def plot_confusion_matrix(cm, classes,
@@ -107,10 +104,7 @@ def plot_and_save_history(history, model_name, file_path, metrics=None):
     if metrics is None:
         metrics = {'acc', 'loss'}
     create_history_plot(history, model_name, metrics)
-<<<<<<< HEAD
     file_dir = os.path.basename(file_path)
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
-=======
->>>>>>> 062e5cd4f730de347a4d835d56da1909b859c974
     plt.savefig(file_path)

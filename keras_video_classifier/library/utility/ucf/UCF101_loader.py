@@ -67,7 +67,6 @@ def scan_ucf_with_labels(data_dir_path, labels):
                 result[video_file_path] = label
     return result
 
-<<<<<<< HEAD
 def scan_dataset_with_labels(data_dir_path, labels, data_set_name):
     input_data_dir_path = data_dir_path + '/' + data_set_name
 
@@ -82,8 +81,6 @@ def scan_dataset_with_labels(data_dir_path, labels, data_set_name):
                 video_file_path = file_path + os.path.sep + ff
                 result[video_file_path] = label
     return result
-=======
->>>>>>> 062e5cd4f730de347a4d835d56da1909b859c974
 
 
 def load_ucf(data_dir_path):
