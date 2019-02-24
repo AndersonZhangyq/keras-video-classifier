@@ -38,7 +38,7 @@ def main():
 
         videos = scan_dataset_with_labels(
             data_dir_path,
-            [label for (label, label_index) in predictor.labels.items()])
+            [label for (label, label_index) in predictor.labels.items()], data_set_name)
 
         print("videos: ", videos)
 
@@ -60,6 +60,8 @@ def main():
             count += 1
             accuracy = correct_count / count
             print("'accuracy: ', accuracy: ", 'accuracy: ', accuracy)
+
+        break
 
 
 if __name__ == '__main__':

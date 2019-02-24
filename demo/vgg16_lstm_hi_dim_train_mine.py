@@ -34,6 +34,8 @@ def main():
 
         plot_and_save_history(history, VGG16LSTMVideoClassifier.model_name,
                             report_dir_path + '/' + VGG16LSTMVideoClassifier.model_name + '-hi-dim-history.png')
+        
+        break
 
 
 if __name__ == '__main__':
