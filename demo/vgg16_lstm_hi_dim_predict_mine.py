@@ -16,14 +16,16 @@ def main():
         vgg16_include_top = False
         data_dir_path = os.path.join(
             os.path.dirname(__file__), 'very_large_data')
+        saved_model_name = 'CV_{}_Train'.format(i + 1)
         model_dir_path = os.path.join(
-            os.path.dirname(__file__), 'models', data_set_name)
+            os.path.dirname(__file__), 'models', saved_model_name)
         config_file_path = VGG16LSTMVideoClassifier.get_config_file_path(
             model_dir_path, vgg16_include_top=vgg16_include_top)
         weight_file_path = VGG16LSTMVideoClassifier.get_weight_file_path(
             model_dir_path, vgg16_include_top=vgg16_include_top)
 
         print("data_set_name: ", data_set_name)
+        print("saved_model_name: ", saved_model_name)
         print("data_dir_path: ", data_dir_path)
         print("model_dir_path: ", model_dir_path)
         print("config_file_path: ", config_file_path)
