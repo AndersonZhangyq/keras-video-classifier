@@ -104,7 +104,8 @@ def plot_and_save_history(history, model_name, file_path, metrics=None):
     if metrics is None:
         metrics = {'acc', 'loss'}
     create_history_plot(history, model_name, metrics)
-    file_dir = os.path.basename(file_path)
+    file_dir = os.path.dirname(file_path)
+    print(file_dir)
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
     plt.savefig(file_path)
